@@ -11,9 +11,22 @@ p, ul, ol, li, button  {
   font-family: var(--nunito)
 }
 
-body {
-  padding: 0;
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0d0d0d;
 }
 
 

@@ -1,26 +1,45 @@
-import "./Header.css";
+import "./HeaderStyles.css";
+
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
+  const [burgerClick, setBurgerClick] = useState(false);
+  const burgerToggle = () => {
+    setBurgerClick(!burgerClick);
+  };
+
   return (
-    <nav>
-      <div>
-        <h1>Michael Mattingly&rsquo;s Portfolio</h1>
-      </div>
-      <ul>
+    <header>
+      <Link to="/">
+        <h1>Michael Mattingly's Portfolio</h1>
+      </Link>
+      <ul className={burgerClick ? "nav-menu active" : "nav-menu"}>
         <li>
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="/about">About Me</a>
+          <Link to="/about">About Me</Link>
         </li>
         <li>
-          <a href="/projects">Projects</a>
+          <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <a href="/contact">Contact Me</a>
+          <Link to="/resume">Resume</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact Me</Link>
         </li>
       </ul>
-    </nav>
+      <div className="burger" onClick={burgerToggle}>
+        {burgerClick ? (
+          <FaTimes size={25} style={{ color: "#FFF" }} />
+        ) : (
+          <FaBars size={25} style={{ color: "#FFF" }} />
+        )}
+      </div>
+    </header>
   );
 };
 
