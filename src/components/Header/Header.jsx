@@ -8,7 +8,6 @@ const Header = () => {
   const [burgerClick, setBurgerClick] = useState(false);
 
   const burgerToggle = () => {
-    console.log("burgerToggle");
     setBurgerClick(!burgerClick);
   };
 
@@ -21,6 +20,10 @@ const Header = () => {
   useEffect(() => {
     burgerToggle();
   }, [currentPage]);
+
+  useEffect(() => {
+    setBurgerClick(false);
+  }, []);
 
   return (
     <header>

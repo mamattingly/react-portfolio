@@ -1,0 +1,31 @@
+.home-intro {
+  text-align: center;
+  color: #FFF;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: rgba(28, 36, 37, 0.9);
+  border-radius: 5px;
+  border: black 2px solid;
+}
+
+.home-intro h2 {
+  padding-bottom: 1rem;
+}
+
+.home-intro p {
+  padding-bottom: 1rem;
+}
+
+.home-img-container {
+    width: 300px; 
+    max-width: 100%; 
+    margin: 0 auto;
+    background-color: rgba(28, 36, 37, 1);
+}
+
+.home-img {
+    width: 100%; 
+    height: auto;
+    background-color: rgba(28, 36, 37, 1);
+    border-radius: 5px;
+}
