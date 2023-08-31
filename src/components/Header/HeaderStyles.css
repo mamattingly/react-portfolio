@@ -31,14 +31,14 @@ header a h1 {
   padding: 0.5rem;
 }
 
-.nav-menu li a {
+.nav-item {
   display: inline-block;
   margin: 0.5em, 1em;
   text-decoration: none;
   color: #fff;
 }
 
-.nav-menu li a, .current-page {
+.nav-item{
   background: linear-gradient(to right, rgb(53, 117, 236), rgb(0, 0, 0)),
     linear-gradient(
       to right,
@@ -52,7 +52,21 @@ header a h1 {
   transition: background-size 400ms;
 }
 
-.nav-menu li a:hover {
+.current-page {
+  background: linear-gradient(
+    to right,
+    rgba(250, 128, 114, 1),
+    rgba(250, 128, 114, 1),
+    rgb(0, 16, 32)
+  );
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  color: #FFF;
+}
+
+.nav-item:hover {
   background-size: 0 2px, 100% 2px;
 }
 

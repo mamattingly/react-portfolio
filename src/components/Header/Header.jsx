@@ -1,14 +1,26 @@
 import "./HeaderStyles.css";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
   const [burgerClick, setBurgerClick] = useState(false);
+
   const burgerToggle = () => {
+    console.log("burgerToggle");
     setBurgerClick(!burgerClick);
   };
+
+  const [currentPage, setCurrentPage] = useState("Home");
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
+  useEffect(() => {
+    burgerToggle();
+  }, [currentPage]);
 
   return (
     <header>
@@ -17,19 +29,49 @@ const Header = () => {
       </Link>
       <ul className={burgerClick ? "nav-menu active" : "nav-menu"}>
         <li>
-          <Link to="/">Home</Link>
+          <Link
+            to="/"
+            className={currentPage === "Home" ? "current-page" : "nav-item"}
+            onClick={() => handlePageChange("Home")}
+          >
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/about">About Me</Link>
+          <Link
+            to="/about"
+            className={currentPage === "About" ? "current-page" : "nav-item"}
+            onClick={() => setCurrentPage("About")}
+          >
+            About Me
+          </Link>
         </li>
         <li>
-          <Link to="/projects">Projects</Link>
+          <Link
+            to="/projects"
+            className={currentPage === "Projects" ? "current-page" : "nav-item"}
+            onClick={() => setCurrentPage("Projects")}
+          >
+            Projects
+          </Link>
         </li>
         <li>
-          <Link to="/resume">Resume</Link>
+          <Link
+            to="/resume"
+            className={currentPage === "Resume" ? "current-page" : "nav-item"}
+            onClick={() => setCurrentPage("Resume")}
+          >
+            Resume
+          </Link>
         </li>
         <li>
-          <Link to="/contact">Contact Me</Link>
+          <Link
+            to="/contact"
+            className={currentPage === "Contact" ? "current-page" : "nav-item"}
+            onClick={() => setCurrentPage("Contact")}
+          >
+            Contact Me
+          </Link>
         </li>
       </ul>
       <div className="burger" onClick={burgerToggle}>

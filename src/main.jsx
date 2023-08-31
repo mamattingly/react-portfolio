@@ -6,12 +6,14 @@ import About from "./routes/About.jsx";
 import Projects from "./routes/Projects.jsx";
 import Contact from "./routes/Contact.jsx";
 import Resume from "./routes/Resume.jsx";
+import ErrorPage from "./routes/ErrorPage.jsx";
 import App from "./App.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Home /> },
       { path: "/about", element: <About /> },
