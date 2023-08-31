@@ -30,7 +30,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   margin-top: auto;
   background-color: rgba(0, 0, 0, 0.5);
   background-image: url("./assets/images/background.webp");
@@ -42,7 +42,7 @@ main {
 
 @media screen and (max-width: 768px) {
   main {
-    height: 100vh;
+    min-height: 100vh;
     margin-top: 4rem;
   }
 }

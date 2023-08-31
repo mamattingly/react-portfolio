@@ -1,29 +1,20 @@
 import "./HeaderStyles.css";
 
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
   const [burgerClick, setBurgerClick] = useState(false);
+  const { pathname } = useLocation();
 
   const burgerToggle = () => {
     setBurgerClick(!burgerClick);
   };
 
-  const [currentPage, setCurrentPage] = useState("Home");
-
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
-
-  useEffect(() => {
-    burgerToggle();
-  }, [currentPage]);
-
   useEffect(() => {
     setBurgerClick(false);
-  }, []);
+  }, [pathname]);
 
   return (
     <header>
@@ -34,8 +25,7 @@ const Header = () => {
         <li>
           <Link
             to="/"
-            className={currentPage === "Home" ? "current-page" : "nav-item"}
-            onClick={() => handlePageChange("Home")}
+            className={pathname === "/" ? "current-page" : "nav-item"}
           >
             Home
           </Link>
@@ -43,8 +33,7 @@ const Header = () => {
         <li>
           <Link
             to="/about"
-            className={currentPage === "About" ? "current-page" : "nav-item"}
-            onClick={() => setCurrentPage("About")}
+            className={pathname === "/about" ? "current-page" : "nav-item"}
           >
             About Me
           </Link>
@@ -52,8 +41,7 @@ const Header = () => {
         <li>
           <Link
             to="/projects"
-            className={currentPage === "Projects" ? "current-page" : "nav-item"}
-            onClick={() => setCurrentPage("Projects")}
+            className={pathname === "/projects" ? "current-page" : "nav-item"}
           >
             Projects
           </Link>
@@ -61,8 +49,7 @@ const Header = () => {
         <li>
           <Link
             to="/resume"
-            className={currentPage === "Resume" ? "current-page" : "nav-item"}
-            onClick={() => setCurrentPage("Resume")}
+            className={pathname === "/resume" ? "current-page" : "nav-item"}
           >
             Resume
           </Link>
@@ -70,8 +57,7 @@ const Header = () => {
         <li>
           <Link
             to="/contact"
-            className={currentPage === "Contact" ? "current-page" : "nav-item"}
-            onClick={() => setCurrentPage("Contact")}
+            className={pathname === "/contact" ? "current-page" : "nav-item"}
           >
             Contact Me
           </Link>
