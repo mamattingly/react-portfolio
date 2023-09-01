@@ -1,12 +1,12 @@
 import "./ResumeStyles.css";
+import resume from "../assets/documents/resume.pdf";
 
 const Resume = () => {
-  const pdfUrl = "../src/assets/documents/resume.pdf";
 
   return (
     <div className="resume-container">
       <h2 className="title">Click Below to Download</h2>
-      <a href={pdfUrl} download className="download-link">
+      <a href={resume} download className="download-link">
         Download Resume
       </a>
       <div className="skills-container">
