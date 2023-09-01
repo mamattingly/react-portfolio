@@ -10,10 +10,10 @@ export const Contact = () => {
 
     emailjs
       .sendForm(
-        process.env.NL_SERVICE,
-        process.env.NL_TEMPLATE,
+        "service_9v3d86w",
+        "template_d90459p",
         form.current,
-        process.env.NL_PK
+        "7Fjxh4cd-qP264EKp"
       )
       .then(
         (result) => {
