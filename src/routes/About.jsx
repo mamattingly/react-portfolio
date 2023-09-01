@@ -1,10 +1,11 @@
 import "./AboutStyles.css";
+import profileImg from "../assets/images/michael.jpeg";
 
 const About = () => {
   return (
     <section className="about-me">
       <h1 className="about-me-title">About Me</h1>
-      <img src="../src/assets/images/michael.jpeg" className="about-me-img"></img>
+      <img src={profileImg} className="about-me-img"></img>
       <ul className="about-me-list">
         <li className="about-me-list-item">
           <p className="about-me-text">
