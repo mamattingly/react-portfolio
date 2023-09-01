@@ -10,10 +10,10 @@ export const Contact = () => {
 
     emailjs
       .sendForm(
-        process.env.NL_SERVICE || import.meta.VITE_SERVICE,
-        process.env.NL_TEMPLATE || import.meta.VITE_TEMPLATE,
+        process.env.NL_SERVICE,
+        process.env.NL_TEMPLATE,
         form.current,
-        process.env.NL_PK || import.meta.VITE_PK
+        process.env.NL_PK
       )
       .then(
         (result) => {
