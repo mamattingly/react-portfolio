@@ -5,6 +5,8 @@ import deploymentCheatsheetReact from "../../assets/images/projects/deployment-c
 import diceWebgame from "../../assets/images/projects/dice-webgame.png";
 import myFirstPortfolio from "../../assets/images/projects/my-first-portfolio.png";
 import nutriDiary from "../../assets/images/projects/NutriDiary.png";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
+
 
 // Object to store information about each project. Add new projects here and import the image above.
 const webpageInfo = [
@@ -51,25 +53,11 @@ const Projects = () => {
   return (
     <div className="projects">
       {webpageInfo.map((webpage, index) => (
-        <div className="card" key={index}>
-          <img src={webpage.img} alt={webpage.title} />
-          <h3>{webpage.title}</h3>
-          <div className="links">
-            <a
-              href={webpage.deployedUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Deployed
-            </a>
-            <a href={webpage.repoUrl} target="_blank" rel="noopener noreferrer">
-              Repository
-            </a>
-          </div>
-        </div>
+        <ProjectCard key={index} webpage={webpage} />
       ))}
     </div>
   );
 };
+
 
 export default Projects;

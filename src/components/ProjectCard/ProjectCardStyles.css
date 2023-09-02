@@ -1,0 +1,65 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(28, 36, 37, 0.9);
+    border: black 2px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .card h3 {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .card a {
+    background: linear-gradient(to right, rgb(53, 117, 236), rgb(0, 0, 0)),
+      linear-gradient(
+        to right,
+        rgba(250, 128, 114, 1),
+        rgba(250, 128, 114, 1),
+        rgb(0, 16, 32)
+      );
+    background-size: 100% 2px, 0 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    text-decoration: none;
+    margin: 10px;
+    color: #fac863;
+  }
+  
+  .card a:hover {
+    background-size: 0 2px, 100% 2px;
+  }
+  
+  .card a:active {
+    background-size: 0 2px, 100% 2px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 90vw;
+    }
+  
+    .card img {
+      width: 100%;
+    }
+  }

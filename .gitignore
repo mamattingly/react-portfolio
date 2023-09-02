@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 
 TASK.md
+package-lock.json
