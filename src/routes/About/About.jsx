@@ -1,6 +1,7 @@
 import "./AboutStyles.css";
-import profileImg from "../assets/images/michael.jpeg";
+import profileImg from "../../assets/images/michael.jpeg";
 
+// About section renders the About Me page.
 const About = () => {
   return (
     <section className="about-me">

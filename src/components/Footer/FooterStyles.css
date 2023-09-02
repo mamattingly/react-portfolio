@@ -69,14 +69,14 @@
   }
 
   .footer-text {
-    padding-top: .5rem;
+    padding-top: 0.5rem;
   }
 
-  .react-container{
-    padding: .5rem;
+  .react-container {
+    padding: 0.5rem;
   }
 
-    .social-icons {
-        padding: .5rem;
-    }
+  .social-icons {
+    padding: 0.5rem;
+  }
 }

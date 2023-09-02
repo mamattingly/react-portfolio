@@ -1,3 +1,4 @@
+# toml file to handle redirects needed by netlify to properly handle manual refresh
 [[redirects]]
   from = "/*"
   to = "/"

@@ -1,8 +1,8 @@
 import "./ResumeStyles.css";
-import resume from "../assets/documents/resume.pdf";
+import resume from "../../assets/documents/resume.pdf";
 
+// Resume renders a link to download my resume and a list of my skills.
 const Resume = () => {
-
   return (
     <div className="resume-container">
       <h2 className="title">Click Below to Download</h2>

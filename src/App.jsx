@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer.jsx";
 
 import { Outlet } from "react-router-dom";
 
+// App renders the Header, the main content, and the Footer.
 function App() {
   return (
     <>

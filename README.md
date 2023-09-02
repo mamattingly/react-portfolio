@@ -2,7 +2,7 @@
 
 ## Description
 
-Link to deployed page:
+Link to deployed page: [https://dashing-sherbet-dcf885.netlify.app/](https://dashing-sherbet-dcf885.netlify.app/)
 
 This is a web-portfolio that was developed using React. This webpage uses react router to dynamically generate webpages though the virtual DOM. This application is a showcase for past and current projects that I am currently developing. Offers the various sections: A short homepage, about me, projects, a resume section that provides a link to download my current resume, and a contact me form that will automatically generate an email using EmailJs services. The footer provides links to my LinkedIn, Github, and Facebook accounts. This website is responsive to various screen sizes.
 
@@ -26,7 +26,7 @@ For Development:
 
 ## Usage
 
-1. Navigate to the deployed page here:
+1. Navigate to the deployed page here: [https://dashing-sherbet-dcf885.netlify.app/]()
 2. Explore the page using the nav links.
 
 ## Code Highlights

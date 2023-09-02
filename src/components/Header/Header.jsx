@@ -27,14 +27,6 @@ const Header = () => {
             to="/"
             className={pathname === "/" ? "current-page" : "nav-item"}
           >
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/about"
-            className={pathname === "/about" ? "current-page" : "nav-item"}
-          >
             About Me
           </Link>
         </li>

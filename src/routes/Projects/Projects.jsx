@@ -1,11 +1,12 @@
-import "./ProjectsStyles.css"
-import weatherAppPic from "../assets/images/weather.png"
-import wealthWisePic from "../assets/images/WealthWise.png"
-import deploymentCheatsheetReact from "../assets/images/deployment-cheatsheet-react.png"
-import diceWebgame from "../assets/images/dice-webgame.png"
-import myFirstPortfolio from "../assets/images/my-first-portfolio.png"
-import nutriDiary from "../assets/images/NutriDiary.png"
+import "./ProjectsStyles.css";
+import weatherAppPic from "../../assets/images/projects/weather.png";
+import wealthWisePic from "../../assets/images/projects/WealthWise.png";
+import deploymentCheatsheetReact from "../../assets/images/projects/deployment-cheatsheet-react.png";
+import diceWebgame from "../../assets/images/projects/dice-webgame.png";
+import myFirstPortfolio from "../../assets/images/projects/my-first-portfolio.png";
+import nutriDiary from "../../assets/images/projects/NutriDiary.png";
 
+// Object to store information about each project. Add new projects here and import the image above.
 const webpageInfo = [
   {
     img: weatherAppPic,
@@ -45,6 +46,7 @@ const webpageInfo = [
   },
 ];
 
+// Projects section renders the Projects page and displays the projects.
 const Projects = () => {
   return (
     <div className="projects">
