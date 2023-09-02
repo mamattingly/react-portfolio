@@ -58,6 +58,14 @@ export const Contact = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormState({ ...formState, [name]: value });
+
+    if (name === "user_name") {
+      setNameValid(true);
+    } else if (name === "user_email") {
+      setEmailValid(true);
+    } else if (name === "message") {
+      setMessageValid(true);
+    }
   };
 
   // sendEmail is an event handler that sends the email to the emailjs server.
