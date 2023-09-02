@@ -1,47 +1,48 @@
 import "./ProjectsStyles.css";
-import weatherAppPic from "../../assets/images/projects/weather.png";
-import wealthWisePic from "../../assets/images/projects/WealthWise.png";
-import deploymentCheatsheetReact from "../../assets/images/projects/deployment-cheatsheet-react.png";
-import diceWebgame from "../../assets/images/projects/dice-webgame.png";
-import myFirstPortfolio from "../../assets/images/projects/my-first-portfolio.png";
-import nutriDiary from "../../assets/images/projects/NutriDiary.png";
+
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
+import weatherAppImg from "../../assets/images/projects/weather.png";
+import wealthWiseImg from "../../assets/images/projects/WealthWise.png";
+import deploymentCheatsheetReactImg from "../../assets/images/projects/deployment-cheatsheet-react.png";
+import diceWebgameImg from "../../assets/images/projects/dice-webgame.png";
+import myFirstPortfolioImg from "../../assets/images/projects/my-first-portfolio.png";
+import nutriDiaryImg from "../../assets/images/projects/NutriDiary.png";
 
 // Object to store information about each project. Add new projects here and import the image above.
 const webpageInfo = [
   {
-    img: weatherAppPic,
+    img: weatherAppImg,
     deployedUrl: "https://meanbean87.github.io/city-weather-webapp/",
     repoUrl: "https://github.com/MeanBean87/city-weather-webapp",
     title: "City Weather Webapp",
   },
   {
-    img: wealthWisePic,
+    img: wealthWiseImg,
     deployedUrl: "https://wealthwise-project2-1bf71934d0b7.herokuapp.com/",
     repoUrl: "https://github.com/MeanBean87/WealthWise-deployed",
     title: "WealthWise",
   },
   {
-    img: deploymentCheatsheetReact,
+    img: deploymentCheatsheetReactImg,
     deployedUrl: "https://meanbean87.github.io/de-cheatsheet-react/",
     repoUrl: "https://github.com/MeanBean87/de-cheatsheet-react",
     title: "Deployment Cheatsheet React",
   },
   {
-    img: diceWebgame,
+    img: diceWebgameImg,
     deployedUrl: "https://meanbean87.github.io/Dice-Webgame/",
     repoUrl: "https://github.com/MeanBean87/Dice-Webgame",
     title: "Dice Webgame",
   },
   {
-    img: myFirstPortfolio,
+    img: myFirstPortfolioImg,
     deployedUrl: "https://meanbean87.github.io/personal-webpage/",
     repoUrl: "https://github.com/MeanBean87/personal-webpage",
     title: "My First Portfolio",
   },
   {
-    img: nutriDiary,
+    img: nutriDiaryImg,
     deployedUrl: "https://meanbean87.github.io/ucb-project-one/",
     repoUrl: "https://github.com/MeanBean87/ucb-project-one",
     title: "NutriDiary",

@@ -12,6 +12,7 @@ export const Contact = () => {
   const [isEmailValid, setEmailValid] = useState(true);
   const [isMessageValid, setMessageValid] = useState(true);
   const [isFormValid, setFormValid] = useState(false);
+  const [isFormSubmitted, setFormSubmitted] = useState(false);
   const [formState, setFormState] = useState({
     user_name: "",
     user_email: "",
@@ -68,6 +69,10 @@ export const Contact = () => {
     }
   };
 
+  const handleFormSubmit = () => {
+    setFormSubmitted(true);
+  }
+
   // sendEmail is an event handler that sends the email to the emailjs server.
   const sendEmail = (e) => {
     e.preventDefault();
@@ -87,6 +92,7 @@ export const Contact = () => {
             user_email: "",
             message: "",
           });
+          setFormSubmitted(true);
         },
         (error) => {
           console.log(error.text);
@@ -97,6 +103,7 @@ export const Contact = () => {
   return (
     <form ref={form} onSubmit={sendEmail} className="contact-form">
       <h2>Contact Me</h2>
+      {isFormSubmitted ? (<p className="success-message" style={{ color: 'green' }}>Thank you for reaching out!</p>) : null}
       <label>Name</label>
       {isNameValid ? null : <p className="error-message" style={{ color: 'red' }}>Name is required.</p>}
       <input
