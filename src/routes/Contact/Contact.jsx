@@ -90,7 +90,7 @@ export const Contact = () => {
     <form ref={form} onSubmit={sendEmail} className="contact-form">
       <h2>Contact Me</h2>
       <label>Name</label>
-      {isNameValid ? null : <p className="error-message">Name is required.</p>}
+      {isNameValid ? null : <p className="error-message" style={{ color: 'red' }}>Name is required.</p>}
       <input
         type="text"
         name="user_name"
@@ -101,7 +101,7 @@ export const Contact = () => {
       />
       <label>Email</label>
       {isEmailValid ? null : (
-        <p className="error-message">Email is Invalid or Blank.</p>
+        <p className="error-message" style={{ color: 'red' }}>Email is Invalid or Blank.</p>
       )}
       <input
         type="email"
@@ -113,7 +113,7 @@ export const Contact = () => {
       />
       <label>Message</label>
       {isMessageValid ? null : (
-        <p className="error-message">Message is required.</p>
+        <p className="error-message" style={{ color: 'red' }}>Message is required.</p>
       )}
       <textarea
         name="message"
