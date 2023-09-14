@@ -8,6 +8,7 @@ import deploymentCheatsheetReactImg from "../../assets/images/projects/deploymen
 import diceWebgameImg from "../../assets/images/projects/dice-webgame.png";
 import myFirstPortfolioImg from "../../assets/images/projects/my-first-portfolio.png";
 import nutriDiaryImg from "../../assets/images/projects/NutriDiary.png";
+import logoMarketplaceImg from "../../assets/images/projects/LogoMarketPlace.png";
 
 // Object to store information about each project. Add new projects here and import the image above.
 const webpageInfo = [
@@ -47,6 +48,12 @@ const webpageInfo = [
     repoUrl: "https://github.com/MeanBean87/ucb-project-one",
     title: "NutriDiary",
   },
+  {
+    img: logoMarketplaceImg,
+    deployedUrl: "https://logo-marketplace-f9aad311ca28.herokuapp.com/",
+    repoUrl: "https://github.com/joellongaresjr/Logo-Marketplace",
+    title: "Logo Marketplace",
+  }
 ];
 
 // Projects section renders the Projects page and displays the projects.

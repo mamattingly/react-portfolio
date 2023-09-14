@@ -103,7 +103,11 @@ export const Contact = () => {
   return (
     <form ref={form} onSubmit={sendEmail} className="contact-form">
       <h2>Contact Me</h2>
-      {isFormSubmitted ? (<p className="success-message" style={{ color: 'green' }}>Thank you for reaching out!</p>) : null}
+      {isFormSubmitted ? (
+        <p className="success-message" style={{ color: 'green' }}>Thank you for reaching out!</p>
+
+      )
+        : null}
       <label>Name</label>
       {isNameValid ? null : <p className="error-message" style={{ color: 'red' }}>Name is required.</p>}
       <input
