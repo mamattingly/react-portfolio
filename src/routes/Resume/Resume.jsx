@@ -1,5 +1,5 @@
 import "./ResumeStyles.css";
-import resume from "../../assets/documents/resume.pdf";
+import resume from "../../assets/documents/resume2024.pdf";
 
 // Resume renders a link to download my resume and a list of my skills.
 const Resume = () => {
