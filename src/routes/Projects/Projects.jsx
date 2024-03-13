@@ -9,43 +9,44 @@ import diceWebgameImg from "../../assets/images/projects/dice-webgame.png";
 import myFirstPortfolioImg from "../../assets/images/projects/my-first-portfolio.png";
 import nutriDiaryImg from "../../assets/images/projects/NutriDiary.png";
 import logoMarketplaceImg from "../../assets/images/projects/LogoMarketPlace.png";
+import clamLordsHpImg from "../../assets/images/projects/clam_lords_logo.png";
 
 // Object to store information about each project. Add new projects here and import the image above.
 const webpageInfo = [
   {
     img: weatherAppImg,
-    deployedUrl: "https://meanbean87.github.io/city-weather-webapp/",
-    repoUrl: "https://github.com/MeanBean87/city-weather-webapp",
+    deployedUrl: "https://mamattingly.github.io/city-weather-webapp/",
+    repoUrl: "https://github.com/mamattingly/city-weather-webapp",
     title: "City Weather Webapp",
   },
   {
     img: wealthWiseImg,
     deployedUrl: "https://wealthwise-project2-1bf71934d0b7.herokuapp.com/",
-    repoUrl: "https://github.com/MeanBean87/WealthWise-deployed",
+    repoUrl: "https://github.com/mamattingly/WealthWise-deployed",
     title: "WealthWise",
   },
   {
     img: deploymentCheatsheetReactImg,
-    deployedUrl: "https://meanbean87.github.io/de-cheatsheet-react/",
-    repoUrl: "https://github.com/MeanBean87/de-cheatsheet-react",
+    deployedUrl: "https://mamattingly.github.io/de-cheatsheet-react/",
+    repoUrl: "https://github.com/mamattingly/de-cheatsheet-react",
     title: "Deployment Cheatsheet React",
   },
   {
     img: diceWebgameImg,
-    deployedUrl: "https://meanbean87.github.io/Dice-Webgame/",
-    repoUrl: "https://github.com/MeanBean87/Dice-Webgame",
+    deployedUrl: "https://mamattingly.github.io/Dice-Webgame/",
+    repoUrl: "https://github.com/mamattingly/Dice-Webgame",
     title: "Dice Webgame",
   },
   {
     img: myFirstPortfolioImg,
-    deployedUrl: "https://meanbean87.github.io/personal-webpage/",
-    repoUrl: "https://github.com/MeanBean87/personal-webpage",
+    deployedUrl: "https://mamattingly.github.io/personal-webpage/",
+    repoUrl: "https://github.com/mamattingly/personal-webpage",
     title: "My First Portfolio",
   },
   {
     img: nutriDiaryImg,
-    deployedUrl: "https://meanbean87.github.io/ucb-project-one/",
-    repoUrl: "https://github.com/MeanBean87/ucb-project-one",
+    deployedUrl: "https://mamattingly.github.io/ucb-project-one/",
+    repoUrl: "https://github.com/mamattingly/ucb-project-one",
     title: "NutriDiary",
   },
   {
@@ -53,6 +54,12 @@ const webpageInfo = [
     deployedUrl: "https://logo-marketplace-f9aad311ca28.herokuapp.com/",
     repoUrl: "https://github.com/joellongaresjr/Logo-Marketplace",
     title: "Logo Marketplace",
+  },
+  {
+    img: clamLordsHpImg,
+    deployedUrl: "https://clam-lords-homepage.onrender.com/",
+    repoUrl: "https://github.com/mamattingly/clam-lords-homepage",
+    title: "Clam Lords Homepage",
   }
 ];
 
