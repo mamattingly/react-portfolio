@@ -1,9 +1,11 @@
 import "./ResumeStyles.css";
 import resume from "../../assets/documents/resume.pdf";
+import Transition from "../../components/Transition";
 
 // Resume renders a link to download my resume and a list of my skills.
 const Resume = () => {
   return (
+    <Transition>
     <div className="resume-container">
       <h2 className="title">Click Below to Download</h2>
       <a href={resume} download className="download-link">
@@ -39,7 +41,8 @@ const Resume = () => {
           <li>Graph Ql</li>
         </ul>
       </div>
-    </div>
+      </div>
+    </Transition>
   );
 };
 

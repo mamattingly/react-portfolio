@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useState, useEffect } from "react";
+import Transition from "../../components/Transition";
 import "./ContactStyles.css";
 
 export const Contact = () => {
@@ -102,6 +103,7 @@ export const Contact = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail} className="contact-form">
+    <Transition>
       <h2>Contact Me</h2>
       {isFormSubmitted ? (
         <p className="success-message" style={{ color: 'green' }}>Thank you for reaching out!</p>
@@ -147,7 +149,8 @@ export const Contact = () => {
         className="submit-btn"
         disabled={!isFormValid}
       />
-    </form>
+    </Transition>
+      </form>
   );
 };
 

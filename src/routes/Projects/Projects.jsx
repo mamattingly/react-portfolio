@@ -1,6 +1,7 @@
 import "./ProjectsStyles.css";
 
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import Transition from "../../components/Transition";
 
 import weatherAppImg from "../../assets/images/projects/weather.png";
 import wealthWiseImg from "../../assets/images/projects/WealthWise.png";
@@ -66,11 +67,13 @@ const webpageInfo = [
 // Projects section renders the Projects page and displays the projects.
 const Projects = () => {
   return (
+    <Transition>
     <div className="projects">
       {webpageInfo.map((webpage, index) => (
         <ProjectCard key={index} webpage={webpage} />
       ))}
-    </div>
+      </div>
+    </Transition>
   );
 };
 

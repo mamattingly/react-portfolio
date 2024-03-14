@@ -1,10 +1,12 @@
 import "./AboutStyles.css";
+import Transition from "../../components/Transition";
 import profileImg from "../../assets/images/michael.jpeg";
 
 // About section renders the About Me page.
 const About = () => {
   return (
     <section className="about-me">
+    <Transition>
       <h1 className="about-me-title">About Me</h1>
       <img src={profileImg} className="about-me-img"></img>
       <ul className="about-me-list">
@@ -66,7 +68,8 @@ const About = () => {
           </p>
         </li>
       </ul>
-    </section>
+    </Transition>
+      </section>
   );
 };
 
