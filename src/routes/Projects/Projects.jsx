@@ -1,5 +1,6 @@
+import React from 'react';
+import { motion } from 'framer-motion';
 import "./ProjectsStyles.css";
-
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import Transition from "../../components/Transition";
 
@@ -12,7 +13,6 @@ import nutriDiaryImg from "../../assets/images/projects/NutriDiary.png";
 import logoMarketplaceImg from "../../assets/images/projects/LogoMarketPlace.png";
 import clamLordsHpImg from "../../assets/images/projects/clam_lords_logo.png";
 
-// Object to store information about each project. Add new projects here and import the image above.
 const webpageInfo = [
   {
     img: weatherAppImg,
@@ -64,18 +64,24 @@ const webpageInfo = [
   }
 ];
 
-// Projects section renders the Projects page and displays the projects.
 const Projects = () => {
   return (
     <Transition>
-    <div className="projects">
-      {webpageInfo.map((webpage, index) => (
-        <ProjectCard key={index} webpage={webpage} />
-      ))}
+      <div className="projects">
+        {webpageInfo.map((webpage, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+          >
+            <ProjectCard webpage={webpage} />
+          </motion.div>
+        ))}
       </div>
     </Transition>
   );
 };
-
 
 export default Projects;
