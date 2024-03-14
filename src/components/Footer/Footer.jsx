@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="footer-container">
       <div className="social-icons">
         <Link
-          to="https://github.com/MeanBean87"
+          to="https://github.com/mamattingly"
           target="_blank"
           className="icon-link"
           aria-label="An Octopus Cat"
