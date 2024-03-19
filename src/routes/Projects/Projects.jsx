@@ -12,6 +12,7 @@ import myFirstPortfolioImg from "../../assets/images/projects/my-first-portfolio
 import nutriDiaryImg from "../../assets/images/projects/NutriDiary.png";
 import logoMarketplaceImg from "../../assets/images/projects/LogoMarketPlace.png";
 import clamLordsHpImg from "../../assets/images/projects/clam_lords_logo.png";
+import JSQuiz from "../../assets/images/projects/JSQuiz.PNG"
 
 const webpageInfo = [
   {
@@ -61,6 +62,12 @@ const webpageInfo = [
     deployedUrl: "https://clam-lords-homepage.onrender.com/",
     repoUrl: "https://github.com/mamattingly/clam-lords-homepage",
     title: "Clam Lords Homepage",
+  }
+  {
+    img: JSQuiz,
+    deployedUrl: "https://mamattingly.github.io/interactive-quiz-website/",
+    repoUrl: "https://github.com/mamattingly/interactive-quiz-website",
+    title: "JS Interactive Quiz", 
   }
 ];
 
