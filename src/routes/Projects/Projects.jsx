@@ -12,7 +12,7 @@ import myFirstPortfolioImg from "../../assets/images/projects/my-first-portfolio
 import nutriDiaryImg from "../../assets/images/projects/NutriDiary.png";
 import logoMarketplaceImg from "../../assets/images/projects/LogoMarketPlace.png";
 import clamLordsHpImg from "../../assets/images/projects/clam_lords_logo.png";
-import JSQuiz from "../../assets/images/projects/JSQuiz.png"
+import JSQuizImg from "../../assets/images/projects/JSQuiz.png"
 
 const webpageInfo = [
   {
@@ -64,7 +64,7 @@ const webpageInfo = [
     title: "Clam Lords Homepage",
   },
   {
-    img: JSQuiz,
+    img: JSQuizImg,
     deployedUrl: "https://mamattingly.github.io/interactive-quiz-website/",
     repoUrl: "https://github.com/mamattingly/interactive-quiz-website",
     title: "JS Interactive Quiz", 
